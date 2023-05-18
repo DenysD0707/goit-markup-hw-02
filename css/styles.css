@@ -92,6 +92,7 @@ body {
 .button-hero {
   color: var(--third-color-text);
   background-color: var(--accent-color);
+  cursor: pointer;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -202,6 +203,7 @@ body {
 /* Фільтр робіт */
 .work-button {
   color: var(--first-color-text);
+  cursor: pointer;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
