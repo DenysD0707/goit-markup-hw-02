@@ -16,12 +16,17 @@
   --first-bg-color: #ffffff;
   --second-bg-color: #2f303a;
   --third-bg-color: #f5f5f5;
+  --fourth-bg-color: #f5f4fa;
 }
 /* Body */
 body {
-  font-family: Roboto;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--first-color-text);
   background-color: var(--first-bg-color);
+  position: relative;
+  height: auto;
 }
 .list {
   list-style-type: none;
@@ -38,65 +43,157 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-
+  line-height: 1.2;
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 145px;
+  top: 12px;
   letter-spacing: 0.03em;
 }
 .logo .web {
   color: var(--accent-color);
 }
-.list-item {
+.list li {
+  display: inline-block;
+}
+.studio {
   color: var(--first-color-text);
   text-decoration: none;
+  position: absolute;
+  width: 45px;
+  height: 16px;
+  left: 370px;
+  top: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.15;
   letter-spacing: 0.02em;
 }
-.list-item:hover,
-.list-item:focus {
-  color: var(--third-color-text);
-  background-color: var(--accent-color);
-}
-.list .list-item.active {
-  color: var(--third-color-text);
-  background-color: var(--accent-color);
-}
-.contact {
-  color: var(--second-color-text);
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-.contact:hover,
-.contact:focus {
+.studio.current {
   color: var(--accent-color);
 }
-
+.studio:hover,
+.studio:focus {
+  color: var(--accent-color);
+}
+.portfolio {
+  color: var(--first-color-text);
+  text-decoration: none;
+  position: absolute;
+  width: 72px;
+  height: 16px;
+  left: 470px;
+  top: 27px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15px;
+  letter-spacing: 0.02em;
+}
+.portfolio.active {
+  color: var(--accent-color);
+}
+.portfolio:hover,
+.portfolio:focus {
+  color: var(--accent-color);
+}
+.call {
+  color: var(--first-color-text);
+  text-decoration: none;
+  position: absolute;
+  width: 64px;
+  height: 16px;
+  left: 598px;
+  top: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+.call:hover,
+.call:focus {
+  color: var(--accent-color);
+}
+.mail {
+  color: var(--second-color-text);
+  text-decoration: none;
+  position: absolute;
+  width: 135px;
+  height: 16px;
+  left: 946px;
+  top: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+.mail:hover,
+.mail:focus {
+  color: var(--accent-color);
+}
+.tel {
+  color: var(--second-color-text);
+  text-decoration: none;
+  position: absolute;
+  width: 122px;
+  height: 16px;
+  left: 1130px;
+  top: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+.tel:hover,
+.tel:focus {
+  color: var(--accent-color);
+}
 /* Hero */
 .hero {
-  color: var(--third-bg-color);
   background-color: var(--second-bg-color);
+  width: auto;
+  height: 400px;
+  left: 0px;
+  top: 80px;
+}
+.title {
+  color: var(--third-bg-color);
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 300px;
+  top: 130px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .button-hero {
   color: var(--third-color-text);
   background-color: var(--accent-color);
+  position: absolute;
+  width: 216px;
+  height: 50px;
+  left: 530px;
+  top: 300px;
   cursor: pointer;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
+  text-align: center;
+  align-items: center;
+  border: 0;
+  border-radius: 4px;
 }
 
 /* Main */
@@ -106,13 +203,39 @@ body {
 /* Ефективні рішення */
 .solution {
   background-color: var(--first-bg-color);
+  height: 50px;
+  top: 470px;
+}
+.details {
+  position: absolute;
+  width: 270px;
+  height: 98px;
+  left: 125px;
+}
+.punctuality {
+  position: absolute;
+  width: 270px;
+  height: 74px;
+  left: 425px;
+}
+.planning {
+  position: absolute;
+  width: 270px;
+  height: 74px;
+  left: 725px;
+}
+.modern {
+  position: absolute;
+  width: 270px;
+  height: 98px;
+  left: 1025px;
 }
 .text {
   color: var(--first-color-text);
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -121,7 +244,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 .invisible-text {
@@ -130,25 +253,41 @@ body {
 /* Що ми робимо */
 .services {
   background-color: var(--first-bg-color);
+  position: absolute;
+  left: 150px;
+  top: 700px;
+}
+
+/* Наша команда */
+.people {
+  background-color: var(--third-bg-color);
+  position: absolute;
+  width: 100%;
+  height: 548px;
+  left: 0px;
+  top: 1150px;
+}
+.people .list {
+  position: absolute;
+  top: 110px;
+  left: 100px;
 }
 .main-text {
   color: var(--first-color-text);
   font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
   letter-spacing: 0.03em;
-}
-/* Наша команда */
-.people {
-  background-color: var(--third-bg-color);
+  font-weight: 700;
+  line-height: 1.16;
+  font-size: 36px;
+  text-align: center;
+  align-items: center;
 }
 .name {
   color: var(--first-color-text);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
 }
 .speciality {
@@ -156,44 +295,77 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
 }
 /* Footer */
 .footer {
   background-color: var(--second-bg-color);
+  position: absolute;
+  width: 100%;
+  height: 210px;
+  left: 0px;
+  top: 1700px;
 }
-.adress {
+.list-footer {
+  list-style-type: none;
+}
+.address {
   color: var(--third-color-text);
+  position: absolute;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
+  left: 145px;
+  top: 80px;
 }
-.studio {
+.logo-footer {
   color: var(--third-color-text);
+  position: absolute;
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
+  left: 145px;
+  top: 30px;
 }
-.studio .web {
+.logo-footer .web {
   color: var(--accent-color);
 }
-.contact-footer {
+.mail-footer {
   color: var(--fourth-color-text);
+  position: absolute;
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
+  left: 0;
 }
-.contact-footer:hover,
-.contact-footer:focus {
+
+.tel-footer {
+  color: var(--fourth-color-text);
+  position: absolute;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  left: 0;
+  top: 75px;
+}
+.mail-footer:hover,
+.mail-footer:focus {
+  color: var(--accent-color);
+}
+.tel-footer:hover,
+.tel-footer:focus {
   color: var(--accent-color);
 }
 /* Portfolio Main */
@@ -203,26 +375,43 @@ body {
 /* Фільтр робіт */
 .work-button {
   color: var(--first-color-text);
+  background-color: var(--fourth-bg-color);
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  left: 300px;
+  border: 0;
+  width: 112px;
+  height: 38px;
+  border-radius: 4px;
 }
 .work-button:hover,
 .work-button:focus {
   color: var(--third-color-text);
   background-color: var(--accent-color);
 }
-/* Приклади робіт */
+.list.filter {
+  position: absolute;
+  left: 330px;
+  top: 100px;
+}
+.list.examples {
+  position: absolute;
+  left: 70px;
+  height: 550px;
+
+  top: 180px;
+}
 .work-text {
   color: var(--first-color-text);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 .work-project {
@@ -230,6 +419,13 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   letter-spacing: 0.03em;
+}
+.work-photo {
+  text-decoration: none;
+}
+.footer.second {
+  position: absolute;
+  top: 1550px;
 }
